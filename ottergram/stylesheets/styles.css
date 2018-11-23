@@ -26,10 +26,24 @@ a {
 
 .detail-image-container {
     flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-image-frame {
+  position: relative;
+  text-align: center;
 }
 
 .detail-image {
     width: 90%;
+}
+
+.detail-image-title {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+  font-size: 40px;
 }
 
 .logo-text {
@@ -50,21 +64,19 @@ a {
     flex-direction: column;
 }
 
-.thumbnail-item + .thumbnail-item {
-    margin-top: 10px;
-}
-
 .thumbnail-item {
+    display: inline-block;
+    min-width: 120px;
+    max-height: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
-    display: inline-block;
-    width: 120px;
 }
 
 .thumbnail-list {
     flex: 0 1 auto;
     order: 2;
     display: flex;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
 
