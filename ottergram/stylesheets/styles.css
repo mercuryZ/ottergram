@@ -113,3 +113,14 @@ a {
     display: block;
     width: 100%;
 }
+
+@media all and (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .thumbnail-list {
+        flex-direction: column;
+    }
+}
